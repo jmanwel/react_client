@@ -2,7 +2,7 @@ import axios from "axios";
 
 //const url = "https://mern-jmg-todo-987e185d8a59.herokuapp.com/todos";
 const url = process.env.ENDPOINT;
-
+console.log(url);
 export const readTodos = ()=> axios.get(url);
 export const createTodo = newTodo => axios.post(url, newTodo);
 
